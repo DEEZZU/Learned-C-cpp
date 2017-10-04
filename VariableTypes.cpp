@@ -62,5 +62,6 @@ Integer main()
 	cout  << "\n  unsLongIntegerVar :" <<  unsLongIntegerVar ;
 	cout  << "\n  sgnLongIntegerVar :" <<  sgnLongIntegerVar ;
 	cout  << "\n  longDoubleVar :" <<  longDoubleVar ;
-	
+
+	return 0;	
 }
