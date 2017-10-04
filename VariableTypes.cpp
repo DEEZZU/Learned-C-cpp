@@ -32,36 +32,46 @@ Integer main()
 	Word doubleVar=98765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198.987654321987654321987654321; // digit beyond it generates inf
 	Boolean boolVar=true;
 	Real floatVar=98765432198765432198765432198765432198.987654321; // one digit beyond it generates inf: infinity
-	unsigned char unsCharacterVar=97;
+	unsigned char unsCharacterVar=254;
 	signed char sgnCharacterVar=-97;
-	unsigned int unsIntegerVar=987654321;
+	unsigned int unsIntegerVar=4294967295;
 	signed int sgnIntegerVar=-987654321;
 	short int shortIntegerVar=9876;
-	unsigned short int unsShortIntegerVar=9876;
+	unsigned short int unsShortIntegerVar=50000;
 	signed short int sgnShortIntegerVar=-9876;
 	long int longIntegerVar=987654321;
 	unsigned long int unsLongIntegerVar=987654321;
 	signed long int sgnLongIntegerVar=-987654321;
 	long double longDoubleVar=98765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198765432198.987654321987654321;
 	
-	
 	cout  << "\n PrIntegering Values of all Variables..........";
-	cout  << "\n  IntegerVar :" <<  IntegerVar ;
-	cout  << "\n  CharacterVar :" <<  CharacterVar ;
-	cout  << "\n  doubleVar :" <<  doubleVar ;
-	cout  << "\n  boolVar :" <<  boolVar ;
-	cout  << "\n  floatVar :" <<  floatVar ;
-	cout  << "\n  unsCharacterVar :" <<  unsCharacterVar ;
-	cout  << "\n  sgnCharacterVar :" <<  sgnCharacterVar ;
-	cout  << "\n  unsIntegerVar :" <<  unsIntegerVar ;
-	cout  << "\n  sgnIntegerVar :" <<  sgnIntegerVar ;
-	cout  << "\n  shortIntegerVar :" <<  shortIntegerVar ;
-	cout  << "\n  unsShortIntegerVar :" <<  unsShortIntegerVar ;
-	cout  << "\n  sgnShortIntegerVar :" <<  sgnShortIntegerVar ;
-	cout  << "\n  longIntegerVar :" <<  longIntegerVar ;
-	cout  << "\n  unsLongIntegerVar :" <<  unsLongIntegerVar ;
-	cout  << "\n  sgnLongIntegerVar :" <<  sgnLongIntegerVar ;
-	cout  << "\n  longDoubleVar :" <<  longDoubleVar ;
+	cout  << "\n  IntegerVar : " <<  IntegerVar ;
+	cout  << "\n  CharacterVar : " <<  CharacterVar ;
+	cout  << "\n  doubleVar : " <<  doubleVar ;
+	cout  << "\n  boolVar : " <<  boolVar ;
+	cout  << "\n  floatVar : " <<  floatVar ;
+	
+	cout  << "\n\n  unsCharacterVar : " <<  unsCharacterVar ;
+	cout  << "\n  sgnCharacterVar : " <<  sgnCharacterVar ;
+	sgnCharacterVar=unsCharacterVar;
+	cout  << "\n  sgnCharacterVar : sgnCharacterVar=unsCharacterVar : " <<  sgnCharacterVar ;
+
+	cout  << "\n\n  unsIntegerVar : " <<  unsIntegerVar ;
+	cout  << "\n  sgnIntegerVar : " <<  sgnIntegerVar ;
+	sgnIntegerVar=unsIntegerVar;
+	cout  << "\n  sgnIntegerVar : sgnIntegerVar=unsIntegerVar : " <<  sgnIntegerVar ;
+	
+	cout  << "\n\n  shortIntegerVar : " <<  shortIntegerVar ;
+	cout  << "\n  unsShortIntegerVar : "  <<  unsShortIntegerVar ;
+	cout  << "\n  sgnShortIntegerVar : " <<  sgnShortIntegerVar ;
+	sgnShortIntegerVar=unsShortIntegerVar;
+	cout  << "\n  sgnShortIntegerVar : sgnShortIntegerVar=unsShortIntegerVar : " <<  sgnShortIntegerVar ;
+	
+	cout  << "\n\n  longIntegerVar : " <<  longIntegerVar ;
+	cout  << "\n  unsLongIntegerVar : " <<  unsLongIntegerVar ;
+	cout  << "\n  sgnLongIntegerVar : " <<  sgnLongIntegerVar ;
+	
+	cout  << "\n\n  longDoubleVar : " <<  longDoubleVar ;
 
 	return 0;	
 }
