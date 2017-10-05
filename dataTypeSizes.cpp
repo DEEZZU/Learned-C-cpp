@@ -39,23 +39,23 @@ int main() {
 	long double longDoubleArr[5];
 	
 	
-	cout  << "\n Printing Sizes of all data types..........";
-	cout  << "\n SizeOf(intVar):" << sizeof(intVar);
-	cout  << "\n SizeOf(charVar):" << sizeof(charVar);
-	cout  << "\n SizeOf(doubleVar):" << sizeof(doubleVar);
-	cout  << "\n SizeOf(boolVar):" << sizeof(boolVar);
-	cout  << "\n SizeOf(floatVar):" << sizeof(floatVar);
-	cout  << "\n SizeOf(unsCharVar):" << sizeof(unsCharVar);
-	cout  << "\n SizeOf(sgnCharVar):" << sizeof(sgnCharVar);
-	cout  << "\n SizeOf(unsIntVar):" << sizeof(unsIntVar);
-	cout  << "\n SizeOf(sgnIntVar):" << sizeof(sgnIntVar);
-	cout  << "\n SizeOf(shortIntVar):" << sizeof(shortIntVar);
-	cout  << "\n SizeOf(unsShortIntVar):" << sizeof(unsShortIntVar);
-	cout  << "\n SizeOf(sgnShortIntVar):" << sizeof(sgnShortIntVar);
-	cout  << "\n SizeOf(longIntVar):" << sizeof(longIntVar);
-	cout  << "\n SizeOf(unsLongIntVar):" << sizeof(unsLongIntVar);
-	cout  << "\n SizeOf(sgnLongIntVar):" << sizeof(sgnLongIntVar);
-	cout  << "\n SizeOf(longDoubleVar):" << sizeof(longDoubleVar);
+	cout  << " \n Printing Sizes of all data types.........." ;
+	cout  << " \n SizeOf(intVar): " << sizeof ( intVar ) ;
+	cout  << " \n SizeOf(charVar): " << sizeof ( charVar ) ;
+	cout  << " \n SizeOf(doubleVar): " << sizeof ( doubleVar ) ;
+	cout  << " \n SizeOf(boolVar): " << sizeof ( boolVar ) ;
+	cout  << " \n SizeOf(floatVar): " << sizeof ( floatVar ) ;
+	cout  << " \n SizeOf(unsCharVar): " << sizeof ( unsCharVar ) ;
+	cout  << " \n SizeOf(sgnCharVar): " << sizeof ( sgnCharVar ) ;
+	cout  << " \n SizeOf(unsIntVar): " << sizeof ( unsIntVar ) ;
+	cout  << " \n SizeOf(sgnIntVar): " << sizeof ( sgnIntVar ) ;
+	cout  << " \n SizeOf(shortIntVar): " << sizeof ( shortIntVar ) ;
+	cout  << " \n SizeOf(unsShortIntVar): " << sizeof ( unsShortIntVar ) ;
+	cout  << " \n SizeOf(sgnShortIntVar): " << sizeof ( sgnShortIntVar ) ;
+	cout  << " \n SizeOf(longIntVar): " << sizeof ( longIntVar ) ;
+	cout  << " \n SizeOf(unsLongIntVar): " << sizeof ( unsLongIntVar ) ;
+	cout  << " \n SizeOf(sgnLongIntVar): " << sizeof ( sgnLongIntVar ) ;
+	cout  << " \n SizeOf(longDoubleVar): " << sizeof ( longDoubleVar ) ;
 	
 	cout  << "Printing Sizes of Arrays of all possible data types..........";
 	cout  << "\n SizeOf(intArr):" << sizeof(intArr);
