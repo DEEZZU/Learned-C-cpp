@@ -24,5 +24,7 @@ int main () {
         cout << "\n Random Number : " << randVar ;
     }
     
+    cout << "\n Generating Random Numbers in a range : " ;
+    cout << (rand()%10)+1 ;
     return 0;
 }
