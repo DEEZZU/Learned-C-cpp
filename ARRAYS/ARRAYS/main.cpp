@@ -10,9 +10,10 @@
 
 #include <iostream>
 #include<iomanip>
-using namespace std;
-#define maxSize 10
 
+using namespace std;
+
+#define maxSize 10
 
 void functionWay1(int *Arr);
 void functionWay2(int Arr[maxSize]);
@@ -28,8 +29,8 @@ int main(int argc, const char * argv[]) {
     charArr[6]='a';
     
     //MultiDimensional Array
-    float floatArr[2][2]={{2.3,4.5},{9.8,5.6}};
-    int intArr2[2][2]={0,1,2,3};
+    float floatArr[2][2]={ { 2.3, 4.5 }, { 9.8, 5.6 } };
+    int intArr2[2][2]={ 0, 1, 2, 3 };
     
     //Pointer to array
     int *intPointer;
@@ -37,8 +38,7 @@ int main(int argc, const char * argv[]) {
     float *floatPointer;
     //*(pointer+i) <- access to each address
     
-    
-    for ( i=0 ; i<10 ; i++ ) {
+    for ( i=0 ; i<maxSize ; i++ ) {
         cout << "\n intArr[ " << i+1 << " ] : " << intArr[i] ;
     }
     
@@ -64,7 +64,7 @@ int main(int argc, const char * argv[]) {
     
     intPointer = intArr;
     
-    for ( i=0 ; i<10 ; i++ ) {
+    for ( i=0 ; i<maxSize; i++ ) {
         cout << "\n intArr[ " << i+1 << " ] : " << *( intPointer + i )  ;
     }
 
@@ -81,19 +81,18 @@ int main(int argc, const char * argv[]) {
         }
     }
     
-    
     //ACCESSING ARRAYS USING FUNCTIONS
     
     functionWay1( intPointer );
     functionWay2(intArr);
     functionWay3(intArr,10);
-    
+ 
 }
 
 void functionWay1(int *Arr) {
     
     int i ;
-    for ( i=0 ; i<10 ; i++ ) {
+    for ( i=0 ; i<maxSize ; i++ ) {
         cout << "\n intArr[ " << i+1 << " ] : " << *( Arr + i )  ;
     }
 }
@@ -101,7 +100,7 @@ void functionWay1(int *Arr) {
 void functionWay2(int Arr[maxSize]){
     
     int i ;
-    for ( i=0 ; i<10 ; i++ ) {
+    for ( i=0 ; i<maxSize ; i++ ) {
         cout << "\n intArr[ " << i+1 << " ] : " << Arr[i] ;
     }
 }
