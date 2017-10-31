@@ -4,10 +4,7 @@
 //
 //  Created by DEEPTI SHARMA on 15/10/17.
 //
-
-#include <iostream>
-#include <ctime>
-#include <cstdlib>
+#include <bits/stdc++.h>   // use this header files instead of using various ones it saves times in competitive coding
 
 using namespace std;
 
