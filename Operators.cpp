@@ -5,7 +5,7 @@ using namespace std;
 int main(){
 	int num1, num2;
 
-	
+	//USING OPERATORS
 	cout << "\n Enter two values: " ;
 	cout << "\n Number 1: " ;
 	cin >> num1 ;
