@@ -13,7 +13,7 @@
 
 using namespace std;
 
-#define maxSize 10
+const auto maxSize = 10;
 
 void functionWay1(int *Arr);
 void functionWay2(int Arr[maxSize]);
