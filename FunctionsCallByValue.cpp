@@ -18,7 +18,7 @@ res=retMax( num1, num2);
 
 cout << "\n The Maximum of two is : " << res ;
 
-return 0;
+return 1;
 }
 
 int retMax( int num1, int num2){
