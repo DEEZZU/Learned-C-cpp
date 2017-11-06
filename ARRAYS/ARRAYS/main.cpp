@@ -13,15 +13,13 @@
 
 using namespace std;
 
-#define maxSize 10
+const auto maxSize = 10;
 
 void functionWay1(int *Arr);
 void functionWay2(int Arr[maxSize]);
 void functionWay3(int Arr[], int size);
 
 int main(int argc, const char * argv[]) {
-  
-    int i , j ; //iterator
     // Declaring and Initializing the array
     int intArr[maxSize] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 } ;
     double doubleArr[] = {10.0, 12.34 , 7.65, 5.432 };
@@ -38,22 +36,22 @@ int main(int argc, const char * argv[]) {
     float *floatPointer;
     //*(pointer+i) <- access to each address
     
-    for ( i=0 ; i<maxSize ; i++ ) {
+    for ( auto i=0 ; i<maxSize ; i++ ) {
         cout << "\n intArr[ " << i+1 << " ] : " << intArr[i] ;
     }
     
-    for ( i=0 ; i<4 ; i++) {
+    for ( auto i=0 ; i<4 ; i++) {
         cout << "\n doubleArr[ " << i+1 << " ] : " << doubleArr[i] ;
     }
     
-    for ( i=0 ; i<2 ; i++ ) {
-        for( j=0 ; j<2 ; j++ ) {
+    for ( auto i=0 ; i<2 ; i++ ) {
+        for(auto j=0 ; j<2 ; j++ ) {
             cout <<"\n floatArr[ " << i+1 << " ][  " << j+1 << " ] : " << floatArr[i][j] ;
         }
     }
     
-    for ( i=0 ; i<2 ; i++ ) {
-        for( j=0 ; j<2 ; j++ ) {
+    for (auto i=0 ; i<2 ; i++ ) {
+        for(auto j=0 ; j<2 ; j++ ) {
             cout <<"\n intArr2[ " << i+1 << " ][  " << j+1 << " ] : " << intArr2[i][j] ;
         }
     }
@@ -64,19 +62,19 @@ int main(int argc, const char * argv[]) {
     
     intPointer = intArr;
     
-    for ( i=0 ; i<maxSize; i++ ) {
+    for (auto i=0 ; i<maxSize; i++ ) {
         cout << "\n intArr[ " << i+1 << " ] : " << *( intPointer + i )  ;
     }
 
     doublePointer = doubleArr ;
     
-    for ( i=0 ; i<4 ; i++) {
+    for (auto i=0 ; i<4 ; i++) {
         cout << "\n doubleArr[ " << i+1 << " ] : " << *( doublePointer + i) ;
     }
     
-    for ( i=0 ; i<2 ; i++ ) {
+    for (auto i=0 ; i<2 ; i++ ) {
         floatPointer = floatArr[i] ;
-        for( j=0 ; j<2 ; j++ ) {
+        for( auto j=0 ; j<2 ; j++ ) {
             cout <<"\n floatArr[ " << i+1 << " ][  " << j+1 << " ] : " << *( floatPointer + j ) ;
         }
     }
@@ -90,25 +88,19 @@ int main(int argc, const char * argv[]) {
 }
 
 void functionWay1(int *Arr) {
-    
-    int i ;
-    for ( i=0 ; i<maxSize ; i++ ) {
+    for (auto i=0 ; i<maxSize ; i++ ) {
         cout << "\n intArr[ " << i+1 << " ] : " << *( Arr + i )  ;
     }
 }
 
 void functionWay2(int Arr[maxSize]){
-    
-    int i ;
-    for ( i=0 ; i<maxSize ; i++ ) {
+    for (auto i=0 ; i<maxSize ; i++ ) {
         cout << "\n intArr[ " << i+1 << " ] : " << Arr[i] ;
     }
 }
 
 void functionWay3(int Arr[], int size){
-    
-    int i ;
-    for ( i=0 ; i<size ; i++ ) {
+    for (auto i=0 ; i<size ; i++ ) {
         cout << "\n intArr[ " << i+1 << " ] : " << Arr[i]  ;
     }
 }
