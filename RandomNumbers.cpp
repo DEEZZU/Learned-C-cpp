@@ -10,13 +10,13 @@ using namespace std;
 
 int main () {
     
-    int i,randValue;
+    int randValue;
     time_t timeVar;
     
     timeVar= time(NULL);
     srand(timeVar);
     
-    for( i = 0; i < 10; i++ ) {
+    for(auto i = 0; i < 10; i++ ) {
         randVar = rand();
         cout << "\n Random Number : " << randVar ;
     }
