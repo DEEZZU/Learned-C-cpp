@@ -1,9 +1,12 @@
 //Operators in C++
 #include<iostream>
+#include<windows.h>
 using namespace std;
 
+void ClearScreen();
+
 int main(){
-	int num1, num2;
+	auto num1 = 0, num2 = 0;
 
 	//USING OPERATORS
 	cout << "\n Enter two values: " ;
@@ -12,7 +15,8 @@ int main(){
 	cout << "\n Number 2: " ;
 	cin >> num2 ;
 	
-	system("CLS") ;
+	//system("CLS") ;
+	void ClearScreen();
 	
 	cout << "\n You Entered :" << endl << " Number 1 :" << num1 << endl << " Number 2 :" << num2 << endl ;
 	
@@ -54,3 +58,40 @@ int main(){
 	//for boolean following operators generate error : -- (post and pre) 
 	 
 }
+
+void ClearScreen()
+  {
+  HANDLE                     hStdOut;
+  CONSOLE_SCREEN_BUFFER_INFO csbi;
+  DWORD                      count;
+  DWORD                      cellCount;
+  COORD                      homeCoords = { 0, 0 };
+
+  hStdOut = GetStdHandle( STD_OUTPUT_HANDLE );
+  if (hStdOut == INVALID_HANDLE_VALUE) return;
+
+  /* Get the number of cells in the current buffer */
+  if (!GetConsoleScreenBufferInfo( hStdOut, &csbi )) return;
+  cellCount = csbi.dwSize.X *csbi.dwSize.Y;
+
+  /* Fill the entire buffer with spaces */
+  if (!FillConsoleOutputCharacter(
+    hStdOut,
+    (TCHAR) ' ',
+    cellCount,
+    homeCoords,
+    &count
+    )) return;
+
+  /* Fill the entire buffer with the current colors and attributes */
+  if (!FillConsoleOutputAttribute(
+    hStdOut,
+    csbi.wAttributes,
+    cellCount,
+    homeCoords,
+    &count
+    )) return;
+
+  /* Move the cursor home */
+  SetConsoleCursorPosition( hStdOut, homeCoords );
+  }
