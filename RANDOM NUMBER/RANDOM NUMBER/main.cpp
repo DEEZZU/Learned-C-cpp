@@ -13,16 +13,14 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     
-    int i, randVar;
+    int randVar;
     time_t timeVar;
     
     timeVar = time(NULL) ;
     srand ((unsigned) timeVar ) ; // this causes different random values on every executions
     
-    for ( i=0 ; i<10 ; i++ ) {
+    for ( auto i=0 ; i<10 ; i++ ) {
         randVar = rand();
         cout << "\n Random Variable : " << randVar ;
     }
-    
-    return 0;
 }
