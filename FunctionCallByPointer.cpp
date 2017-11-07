@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 
-void sum(int* , int, int);
+void sum(int* , int&, int&);
 
 int main() {
 	int num1, num2;
@@ -21,7 +21,7 @@ int main() {
 	return 0;
 }
 
-void sum ( int* Res , int n1 , int n2 ){
+void sum ( int* Res , int& n1 , int& n2 ){
 	
 	*Res=n1+n2;
 }
