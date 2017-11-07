@@ -4,13 +4,12 @@ using namespace std;
 
 int main(){
 	
-	int i ; //iterator
-	int endCount=10;
+	auto endCount=10;
 	
 	cout << "\n Enter the number of times you want to execute the loop : " ;
 	cin >> endCount ; 
 	
-	for ( i = 0; i < endCount ; i++ ){
+	for (auto i = 0; i < endCount ; i++ ){
 		
 		if( i != 4 ){
 			cout << " for ( " << i+1 << " ) " << endl ;
@@ -19,7 +18,7 @@ int main(){
 		
 	}
 
-	i = 0 ;
+	auto i = 0 ;
 	
 	while ( i< endCount ){
 		if( i > 6){
@@ -34,7 +33,7 @@ int main(){
 	}	
 	
 	label :
-	i = 0 ;
+	auto i = 0 ;
 
 	do{
 		if( i< 5){
@@ -49,7 +48,5 @@ int main(){
 		
 	}while ( i < endCount );
 	
-	
-	return 0;	
 }
 
