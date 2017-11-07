@@ -42,7 +42,7 @@ int main(int argc, const char * argv[]) {
     intPointer = intArr ;
     
     cout << "\n PRINTING ARRAY USING ++ : " ;
-    for ( int i =0 ; i < 5 ; i ++ ){
+    for ( auto i =0 ; i < 5 ; i ++ ){
         cout << *intPointer << " " ;
         intPointer++;
     }
@@ -58,7 +58,7 @@ int main(int argc, const char * argv[]) {
     
     char *stringArr[3] = { "Hey" , "Ho" , "Hi" };
     
-    for ( int i=0 ; i<3 ; i++ ) {
+    for ( auto i=0 ; i<3 ; i++ ) {
         cout << stringArr[i] << endl ;
     }
     
@@ -69,6 +69,4 @@ int main(int argc, const char * argv[]) {
     cout << "\n intPointer2 : " << intPointer2 ;
     cout << "\n *intPointer2 : " << *intPointer2 ;
     cout << "\n **intPointer2 : " << **intPointer2 ;
-    
-    return 0;
 }
