@@ -1,5 +1,5 @@
 //
-//  InlineFunction.cpp
+//  CopyConstructor.cpp
 //  CLASSES
 //
 //  Created by DEEPTI SHARMA on 09/11/17.
