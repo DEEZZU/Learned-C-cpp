@@ -74,7 +74,7 @@ int main(){
     
     Employee E1, E2("Neha", 1 , 45.67 );
     Employee E3(E2);
-    
+    cout << "\n size of employee : " << sizeof(Employee) ; // again 4 byte more are allocated 
     Display(E1);
     Display(E2);
     Display(E3);
