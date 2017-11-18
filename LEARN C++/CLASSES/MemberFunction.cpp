@@ -4,7 +4,7 @@
 //
 //  Created by DEEPTI SHARMA on 06/11/17.
 //  Copyright © 2017 DEEPTI SHARMA. All rights reserved.
-//
+
 
 #include <iostream>
 #include <cstring>
@@ -56,6 +56,8 @@ void Student::dispInfo(){
 int main(){
     
     Student Student1, Student2 ;
+    cout << "\n Student class size : " <<  sizeof(Student) ; // again 4 byte extra were found extra
+    cout << "\n Size of string class : " << sizeof(string) ;
     
     Student1.getrollNo();
     Student1.getName();
