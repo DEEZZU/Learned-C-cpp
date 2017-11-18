@@ -4,7 +4,9 @@
 //
 //  Created by DEEPTI SHARMA on 06/11/17.
 //  Copyright © 2017 DEEPTI SHARMA. All rights reserved.
-//
+//  initialization is allowed in class
+//  while assignment is not
+//  if there is a constant member in class then it must be either initialized either at declartion time or when constructor is given
 
 
 #include <iostream>
@@ -14,14 +16,18 @@ class Box{
     
     private :
     
-    double length, breadth, height ;
+    const int num=9;
+    double length=0, breadth, height ;
     double volume ;
+    //length=0;
     
     public :
+    
     Box(){
         length=breadth=height=0;
         cout << "\n Object Created using non parameterised contstructor " ;
     }
+    
     
     Box(double l, double b, double h) {
         length = l ;
@@ -100,9 +106,14 @@ void Box::getHeight(){
 
 int main(){
     
+
     Box box1, box2(10,11,12), box3(10,12) ;
     double vol1, vol2, vol3 ;
     
+//    cout << "\n Size of class Object : " << sizeof(Box); // size=40 ?? 4*8=32 + 4= 36 + 4??
+//    cout << "\n Size of class Object : " << sizeof(box2);
+//    cout << "\n Size of double : " <<sizeof(double);
+
     box1.getLength();
     box1.getBreadth();
     box1.getHeight();
