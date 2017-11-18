@@ -16,7 +16,7 @@ inline int min( int, int);
 int main(){
     
     int num1, num2, result;
-    
+
     cout << "\n Enter two numbers : " ;
     cin >> num1 >> num2 ;
     
@@ -43,5 +43,6 @@ int min( int n1, int n2){
     if ( n1 < n2 ){
         return n1 ;
     }
+    
     return n2 ;
 }
