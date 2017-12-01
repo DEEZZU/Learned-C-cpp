@@ -87,6 +87,23 @@ class employeeGrader{
     }
 };
 
+// Inheriting friend of a class A , let's call it B , Inheriting B does nt give the child the acces to the private members of A
+//class B : public employeeGrader
+//{
+//    int a ;
+//
+//    public :
+//
+//    void acc(Employee &E)
+//    {
+//
+//        employeeGrader();
+//        display(E);
+//    }
+//
+//};
+
+
 
 int main(){
     
