@@ -1,7 +1,10 @@
 ## OUTPUT 1
 
 // Thanks to Venki for suggesting this code.
+
+```c++
 #include <iostream>
+
 using namespace std;
 
 class Empty
@@ -28,8 +31,10 @@ class Dummy
 	char c;
 };
 
+
 int main()
 {
+
   	int* a;
 
 	cout << "sizeof(Empty) " << sizeof(Empty) << endl;
@@ -50,7 +55,7 @@ int main()
 
 	return 0;
 }
-
+```
 
 ### Output :
 
