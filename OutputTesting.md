@@ -4,11 +4,13 @@
 
 ```c++
 #include <iostream>
-
 using namespace std;
 
 class Empty
-{ int b ; int d;};
+{ 
+	int b;
+	int d;
+};
 
 class Derived1 : public Empty
 {};
@@ -34,25 +36,15 @@ class Dummy
 
 int main()
 {
-
   	int* a;
-
 	cout << "sizeof(Empty) " << sizeof(Empty) << endl;
-	
 	cout << "sizeof(Derived1) " << sizeof(Derived1) << endl;
-	
 	cout << "sizeof(Derived2) " << sizeof(Derived2) << endl;
-	
 	cout << "sizeof(Derived3) " << sizeof(Derived3) << endl;
-	
 	cout << "sizeof(Derived4) " << sizeof(Derived4) << endl; 
-	
 	cout << "sizeof(Dummy) " << sizeof(Dummy) << endl;
-	
 	cout << "sizeof(virtual)" << sizeof(a) << endl;
-	
 	cout << "sizeof(char)" << sizeof(char) << endl;
-
 	return 0;
 }
 ```
