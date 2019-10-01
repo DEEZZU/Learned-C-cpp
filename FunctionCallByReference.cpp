@@ -5,6 +5,7 @@ using namespace std;
 void sum(int& , int, int);
 
 int main() {
+	// declaring variables
 	int num1, num2;
 	int sumResult;
 	
@@ -13,7 +14,7 @@ int main() {
 	cin >> num1 ;
 	cout << "\n Enter num2 : " ;
 	cin >> num2 ;
-	
+	// Function Call
 	sum(sumResult,num1,num2);
 	
 	cout << "\n Result of Addition : " << sumResult ;
