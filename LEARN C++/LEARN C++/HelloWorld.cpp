@@ -9,7 +9,10 @@
 #include <iostream>
 using namespace std;
 
+//main function with integer return type
 int main(){
     
+    //print statement in c++
     cout << "\n Hello World !!! " ;
+    return 0;
 }
